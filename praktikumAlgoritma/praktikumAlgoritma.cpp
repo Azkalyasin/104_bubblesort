@@ -8,7 +8,7 @@ int n;
 void input() {
 	while (true)
 	{
-		cout << "Masukkan banyak element pada array";
+		cout << "Masukkan banyak element pada array: ";
 		cin >> n;
 		if (n <= 20) {
 			break;
@@ -24,8 +24,8 @@ void input() {
 	cout << "Masukkan element Array" << endl;
 	cout << "======================" << endl;
 
-	for (int i = 0; 1 < n; i++) {
-		cout << "Data ke" << (1 + 1) << ": ";
+	for (int i = 0; i < n; i++) {
+		cout << "Data ke" << (i + 1) << ": ";
 		cin >> a[i];
 	}
 }
@@ -59,19 +59,13 @@ void display() {
 	cout << endl;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 int main()
 {
-    std::cout << "Hello World!\n";
+	input();
+	bubblesort();
+	display();
+	system("pause");
+
+	return 0;
 }
 
